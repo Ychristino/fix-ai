@@ -1,0 +1,78 @@
+[
+    {
+        "error": "SyntaxError: invalid syntax",
+        "solution": "Verifique a sintaxe do código e corrija o erro. Exemplo: se falta um parêntese ou dois-pontos."
+    },
+    {
+        "error": "IndentationError: unexpected indent",
+        "solution": "Verifique a indentação do código e garanta que esteja consistente (4 espaços ou 1 tab)."
+    },
+    {
+        "error": "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
+        "solution": "Converta tipos de dados incompatíveis antes de realizar operações. Exemplo: str(10) + 'text' ou 10 + int('20')."
+    },
+    {
+        "error": "ValueError: invalid literal for int() with base 10: 'abc'",
+        "solution": "Verifique a entrada e garanta que seja um número válido antes de convertê-la para int."
+    },
+    {
+        "error": "IndexError: list index out of range",
+        "solution": "Verifique o comprimento da lista e garanta que o índice esteja dentro do intervalo válido."
+    },
+    {
+        "error": "KeyError: 'non_existent_key'",
+        "solution": "Verifique se a chave existe no dicionário antes de acessá-la ou use dict.get('key', default)."
+    },
+    {
+        "error": "AttributeError: 'NoneType' object has no attribute 'attribute'",
+        "solution": "Verifique se o objeto não é None antes de acessar seus atributos."
+    },
+    {
+        "error": "ImportError: No module named 'non_existent_module'",
+        "solution": "Verifique se o módulo está instalado e se o nome está correto."
+    },
+    {
+        "error": "ModuleNotFoundError: No module named 'non_existent_module'",
+        "solution": "Verifique se o módulo está instalado e se o nome está correto."
+    },
+    {
+        "error": "ZeroDivisionError: division by zero",
+        "solution": "Verifique se o denominador não é zero antes de realizar uma divisão."
+    },
+    {
+        "error": "NameError: name 'undefined_variable' is not defined",
+        "solution": "Certifique-se de que a variável foi definida antes de usá-la."
+    },
+    {
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: 'non_existent_file.txt'",
+        "solution": "Verifique se o caminho do arquivo está correto e se o arquivo existe."
+    },
+    {
+        "error": "OSError: [Errno 13] Permission denied: 'restricted_file.txt'",
+        "solution": "Verifique as permissões de acesso ao arquivo ou execute o script com permissões apropriadas."
+    },
+    {
+        "error": "MemoryError",
+        "solution": "Tente otimizar o uso de memória, dividindo a tarefa em partes menores ou utilizando estruturas de dados mais eficientes."
+    },
+    {
+        "error": "AssertionError",
+        "solution": "Verifique a expressão assertiva e garanta que ela seja verdadeira."
+    },
+    {
+        "error": "OverflowError: int too large to convert to float",
+        "solution": "Verifique os valores e evite operações que resultem em números muito grandes."
+    },
+    {
+        "error": "EOFError: EOF when reading a line",
+        "solution": "Verifique se há mais dados a serem lidos antes de realizar operações de leitura."
+    },
+    {
+        "error": "RecursionError: maximum recursion depth exceeded",
+        "solution": "Verifique se a recursão é necessária e, se for, aumente o limite de recursão com sys.setrecursionlimit."
+    },
+    {
+        "error": "RuntimeError: maximum recursion depth exceeded while calling a Python object",
+        "solution": "Identifique e corrija o problema que está causando a recursão excessiva."
+    }
+]

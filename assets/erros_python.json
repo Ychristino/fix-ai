@@ -1,0 +1,132 @@
+[
+  {
+    "name": "SyntaxError",
+    "message": "invalid syntax",
+    "traceback": "  File \"example.py\", line 7\n    if True print(\"Hello\")\n               ^\nSyntaxError: invalid syntax\n"
+  },
+  {
+    "name": "SyntaxError",
+    "message": "expected ':', but got 'if'",
+    "traceback": "  File \"example.py\", line 4\n    if True\n    ^\nSyntaxError: expected ':', but got 'if'\n"
+  },
+  {
+    "name": "IndentationError",
+    "message": "unexpected indent",
+    "traceback": "  File \"example.py\", line 6\n    def function():\n    ^\nIndentationError: unexpected indent\n"
+  },
+  {
+    "name": "IndentationError",
+    "message": "unindent does not match any outer indentation level",
+    "traceback": "  File \"example.py\", line 5\n    print(\"Hello\")\n    \t\t\t\t\t\nIndentationError: unindent does not match any outer indentation level\n"
+  },
+  {
+    "name": "TypeError",
+    "message": "unsupported operand type(s) for +: 'int' and 'str'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 12, in <module>\n    result = 10 + \"5\"\nTypeError: unsupported operand type(s) for +: 'int' and 'str'\n"
+  },
+  {
+    "name": "TypeError",
+    "message": "function takes 1 positional argument but 2 were given",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 15, in <module>\n    result = my_function(10, 20)\nTypeError: function takes 1 positional argument but 2 were given\n"
+  },
+  {
+    "name": "ValueError",
+    "message": "invalid literal for int() with base 10: 'abc'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 8, in <module>\n    number = int(\"abc\")\nValueError: invalid literal for int() with base 10: 'abc'\n"
+  },
+  {
+    "name": "ValueError",
+    "message": "too many values to unpack (expected 2)",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 18, in <module>\n    a, b = (1, 2, 3)\nValueError: too many values to unpack (expected 2)\n"
+  },
+  {
+    "name": "IndexError",
+    "message": "list index out of range",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 9, in <module>\n    item = my_list[10]\nIndexError: list index out of range\n"
+  },
+  {
+    "name": "KeyError",
+    "message": "'non_existent_key'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 11, in <module>\n    value = my_dict['non_existent_key']\nKeyError: 'non_existent_key'\n"
+  },
+  {
+    "name": "AttributeError",
+    "message": "'NoneType' object has no attribute 'attribute'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 14, in <module>\n    result = none_object.attribute\nAttributeError: 'NoneType' object has no attribute 'attribute'\n"
+  },
+  {
+    "name": "ImportError",
+    "message": "No module named 'non_existent_module'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 3, in <module>\n    import non_existent_module\nImportError: No module named 'non_existent_module'\n"
+  },
+  {
+    "name": "ModuleNotFoundError",
+    "message": "No module named 'non_existent_module'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 4, in <module>\n    import non_existent_module\nModuleNotFoundError: No module named 'non_existent_module'\n"
+  },
+  {
+    "name": "ZeroDivisionError",
+    "message": "division by zero",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 5, in <module>\n    result = 1 / 0\nZeroDivisionError: division by zero\n"
+  },
+  {
+    "name": "NameError",
+    "message": "name 'undefined_variable' is not defined",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    print(undefined_variable)\nNameError: name 'undefined_variable' is not defined\n"
+  },
+  {
+    "name": "FileNotFoundError",
+    "message": "[Errno 2] No such file or directory: 'non_existent_file.txt'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 6, in <module>\n    open('non_existent_file.txt')\nFileNotFoundError: [Errno 2] No such file or directory: 'non_existent_file.txt'\n"
+  },
+  {
+    "name": "OSError",
+    "message": "[Errno 13] Permission denied: 'restricted_file.txt'",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 4, in <module>\n    open('restricted_file.txt', 'w')\nOSError: [Errno 13] Permission denied: 'restricted_file.txt'\n"
+  },
+  {
+    "name": "MemoryError",
+    "message": "Unable to allocate memory for large object",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 1, in <module>\n    big_list = [1] * (10**10)\nMemoryError: Unable to allocate memory for large object\n"
+  },
+  {
+    "name": "AssertionError",
+    "message": "assertion failed, condition was not met",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    assert 1 == 2\nAssertionError: assertion failed, condition was not met\n"
+  },
+  {
+    "name": "OverflowError",
+    "message": "int too large to convert to float",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    result = float(10**1000)\nOverflowError: int too large to convert to float\n"
+  },
+  {
+    "name": "EOFError",
+    "message": "EOF when reading a line",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    input(\"Enter something: \")\nEOFError: EOF when reading a line\n"
+  },
+  {
+    "name": "RecursionError",
+    "message": "maximum recursion depth exceeded",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    recursive_function()\n  File \"example.py\", line 2, in recursive_function\n    recursive_function()\nRecursionError: maximum recursion depth exceeded\n"
+  },
+  {
+    "name": "RuntimeError",
+    "message": "maximum recursion depth exceeded while calling a Python object",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    recursive_function()\n  File \"example.py\", line 2, in recursive_function\n    recursive_function()\nRuntimeError: maximum recursion depth exceeded while calling a Python object\n"
+  },
+  {
+    "name": "DeprecationWarning",
+    "message": "The 'imp' module is deprecated",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    import imp\nDeprecationWarning: The 'imp' module is deprecated\n"
+  },
+  {
+    "name": "UserWarning",
+    "message": "This feature is deprecated and will be removed in a future version",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    some_deprecated_function()\nUserWarning: This feature is deprecated and will be removed in a future version\n"
+  },
+  {
+    "name": "FutureWarning",
+    "message": "The 'some_function' function will be removed in the future",
+    "traceback": "Traceback (most recent call last):\n  File \"example.py\", line 2, in <module>\n    some_function()\nFutureWarning: The 'some_function' function will be removed in the future\n"
+  }
+]

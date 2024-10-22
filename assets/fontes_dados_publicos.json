@@ -1,0 +1,52 @@
+[
+    {
+        "name": "GitHub - Repositórios de Código Aberto",
+        "description": "Plataforma para hospedagem e compartilhamento de código.",
+        "link": "https://github.com/"
+    },
+    {
+        "name": "Stack Overflow - Comunidade de Programadores",
+        "description": "Plataforma de perguntas e respostas para programadores.",
+        "link": "https://stackoverflow.com/"
+    },
+    {
+        "name": "PyPI - Python Package Index",
+        "description": "Repositório oficial de pacotes Python.",
+        "link": "https://pypi.org/"
+    },
+    {
+        "name": "Documentação Oficial do Python",
+        "description": "Documentação oficial da linguagem Python.",
+        "link": "https://docs.python.org/3/"
+    },
+    {
+        "name": "Real Python - Tutoriais e Artigos",
+        "description": "Recursos de aprendizado e artigos sobre Python.",
+        "link": "https://realpython.com/"
+    },
+    {
+        "name": "Python Package Documentation",
+        "description": "Documentação para pacotes Python como pandas, numpy, etc.",
+        "link": "Exemplos incluem pandas, numpy, etc."
+    },
+    {
+        "name": "Medium - Artigos Técnicos e Blogs",
+        "description": "Artigos e blogs sobre diversos tópicos técnicos, incluindo Python.",
+        "link": "https://medium.com/tag/python"
+    },
+    {
+        "name": "Kaggle - Conjuntos de Dados e Competição",
+        "description": "Plataforma para competições de ciência de dados e conjuntos de dados.",
+        "link": "https://www.kaggle.com/"
+    },
+    {
+        "name": "Reddit - Comunidades de Python",
+        "description": "Subreddit para discussão e compartilhamento sobre Python.",
+        "link": "https://www.reddit.com/r/Python/"
+    },
+    {
+        "name": "W3Schools - Tutoriais de Programação",
+        "description": "Tutoriais e exemplos de código para várias linguagens, incluindo Python.",
+        "link": "https://www.w3schools.com/python/"
+    }
+]
