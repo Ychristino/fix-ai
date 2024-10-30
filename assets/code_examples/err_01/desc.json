@@ -1,0 +1,11 @@
+{
+  "error": {
+    "name": "TypeError",
+    "message": "unsupported operand type(s) for +: 'int' and 'str'",
+    "traceback": "TypeError: unsupported operand type(s) for +: 'int' and 'str'\n"
+  },
+  "fix": {
+        "error": "TypeError: unsupported operand type(s) for +: 'int' and 'str'",
+        "solution": "Converta tipos de dados incompatíveis antes de realizar operações. Exemplo: str(10) + 'text' ou 10 + int('20')."
+  }
+}

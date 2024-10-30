@@ -1,0 +1,11 @@
+{
+  "error": {
+    "name": "AttributeError",
+    "message": "'str' object has no attribute 'append'",
+    "traceback": "AttributeError: 'str' object has no attribute 'append'\n"
+  },
+  "fix": {
+        "error": "AttributeError: 'str' object has no attribute 'append'",
+        "solution": "A classe String não possui método append. Embora seja possível utilziar operações de lista para os textos Strings, o que pode causar alguma confusão, a utilização de append ocorrerá para adicionar elementos em listas, simbolizadas por [] ou conjuntos de dados. Para adicionar texto à String, utilize o operador +. Ex.: 'texto 01' + 'texto 02' ou, ainda, para variáveis: texto += 'novo texto'. Desta foma o valor será adicionado ao final da string. Utilize =+ para adicionar ao início."
+  }
+}

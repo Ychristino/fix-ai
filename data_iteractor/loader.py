@@ -34,7 +34,7 @@ class Loader:
 
     def load_structure(self):
         self.execution_errors = load_execution_errors(path=self.path)
-        self.public_data = load_fixes(path=self.path)
-        self.solutions = load_public_data(path=self.path)
+        self.public_data = load_public_data(path=self.path)
+        self.solutions = load_fixes(path=self.path)
 
         return self.execution_errors, self.solutions, self.public_data

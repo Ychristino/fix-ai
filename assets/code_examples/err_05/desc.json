@@ -1,0 +1,11 @@
+{
+  "error": {
+    "name": "ModuleNotFoundError",
+    "message": "No module named 'numpy'",
+    "traceback": "ModuleNotFoundError: No module named 'numpy'\n"
+  },
+  "fix": {
+        "error": "ModuleNotFoundError: No module named 'numpy'",
+        "solution": "O módulo não pode ser encontrado pois precisa ser instalado antes de sua utilização. A lista de módulos instalados pode ser consultada no gerenciador de pacotes do python (pip). Para verificar os pacotes já instalados utilize o comando 'pip list'. Para adicionar novos pacotes, utilize o comadno 'pip install <nome-do-pacote>.'"
+  }
+}

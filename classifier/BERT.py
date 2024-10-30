@@ -99,5 +99,5 @@ class BERT(Classifier):
         print(classification_report(raw_test_labels.index.tolist(),
                                     predicted_labels,
                                     zero_division=0,
-                                    #target_names=self.labels.values.tolist()
+                                    # target_names=self.labels.values.tolist()
                                     ))

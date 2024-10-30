@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import re
+import tokenize
 import pandas as pd
+from io import BytesIO
 
 from data_iteractor.Exceptions import InvalidInstanceException
 
@@ -75,11 +77,11 @@ def normalize_log_level(message: str | pd.Series) -> str:
 
 def remove_noise(message: str | pd.Series) -> str:
     noise_patterns = [
-        r'\[DEBUG\]', # Remove mensagens de debug
+        r'\[DEBUG\]',  # Remove mensagens de debug
         r'\[INFO\]',  # Remove mensagens informativas
-        r'\[TRACE\]', # Remove mensagens de rastreamento
-        r'ID: \d+',   # Remove IDs de erros
-        r'\s+',       # Remove espaços extras
+        r'\[TRACE\]',  # Remove mensagens de rastreamento
+        r'ID: \d+',  # Remove IDs de erros
+        r'\s+',  # Remove espaços extras
     ]
 
     if isinstance(message, str):
@@ -140,3 +142,24 @@ def tokenize_error_message(error_message: str):
     }
 
     return result
+
+
+def load_code(file_path: str):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return file.read()
+
+
+def tokenize_code(file_path: str):
+    code = load_code(file_path=file_path)
+    code_bytes = BytesIO(code.encode('utf-8')).readline
+    token_list = []
+
+    for token in tokenize.tokenize(code_bytes):
+        if token.type != tokenize.ENCODING and token.type != tokenize.NEWLINE:
+            token_list.append((token.type, token.string))
+    return token_list
+
+
+def show_tokens(token_list: list):
+    for token_type, value in token_list:
+        print(f"Type: {token_type}, Value: '{value}'")

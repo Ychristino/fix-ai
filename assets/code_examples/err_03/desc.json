@@ -1,0 +1,11 @@
+{
+  "error": {
+    "name": "SyntaxError",
+    "message": "invalid syntax",
+    "traceback": "SyntaxError: invalid syntax\n"
+  },
+  "fix": {
+        "error": "SyntaxError: invalid syntax",
+        "solution": "Erro de semântica do código. O comando não foi utilizado da forma esperada. Para o de estruturas que possuem 'blocos', como é o caso do while, for, if, else, etc. a linha deverpa terminar com o símbolo de ':', bem como o seu bloco interno deverá estar identado devidamente, dessa forma o Python poderá compreender que a sequência de passos somente deverá ser executada caso a regra definida seja válida."
+  }
+}
